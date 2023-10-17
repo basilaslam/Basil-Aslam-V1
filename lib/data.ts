@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import genius from "@/public/Genius.png";
+import labonzz from "@/public/La-Bonzz.png";
+import trelloClone from "@/public/Trello-Clone.png";
 
 export const links = [
   {
@@ -34,53 +34,55 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  
+  {
+    title: "Graduated higher secondary",
+    location: "Kozhikode, Kerala",
+    description:
+      "I have completed my higher secondary education from Univercity of Calicut",
+    icon: React.createElement(LuGraduationCap),
+    date: "2018 - 2019",
+  },
   {
     title: "Graduated bootcamp",
-    location: "Miami, FL",
+    location: "Kozhikode, Kerala",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I graduated after 7 months of studying.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023",
   },
+  {
+    title: "Bachelor of Computer Applications",
+    location: "Bharthia, Uttar Pradesh",
+    description:
+      "I'm currently pursuing a Bachelor of Computer Applications from GLA Univercity as a distance degree",
+    icon: React.createElement(LuGraduationCap),
+    date: "2023 - present",
+  },
+  
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Genius",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Genius generates images, videos, music, code, and AI-driven conversations. Explore its boundless creativity",
+    tags: ["React", "Next.js", "SQL", "Tailwind", "Prisma"],
+    imageUrl: genius,
   },
   {
-    title: "rmtDev",
+    title: "Trello-Clone",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Check out my minimalist task manager inspired by Trello, designed for streamlined organization and productivity",
+    tags: ["Angular", "TypeScript", "Rxjs", "Ngrx", "Tailwind", "Redux"],
+    imageUrl: trelloClone,
   },
   {
-    title: "Word Analytics",
+    title: "La Bonnz",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Discover 'La Bonnz,' your gateway to a world of exquisite products. Shop, save, and experience the finest in every purchase.",
+    tags: ["Nodejs", "HBS", "MongoDB", "HTML", "CSS"],
+    imageUrl: labonzz,
   },
 ] as const;
 
@@ -97,11 +99,8 @@ export const skillsData = [
   "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
+  "Golang"
 ] as const;
