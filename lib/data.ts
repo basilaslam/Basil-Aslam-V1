@@ -69,6 +69,7 @@ export const projectsData = [
       "Genius generates images, videos, music, code, and AI-driven conversations. Explore its boundless creativity",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Prisma"],
     imageUrl: genius,
+    link: 'https://genius-cpeitwtrka-el.a.run.app'
   },
   {
     title: "Trello-Clone",
@@ -76,6 +77,7 @@ export const projectsData = [
       "Check out my minimalist task manager inspired by Trello, designed for streamlined organization and productivity",
     tags: ["Angular", "TypeScript", "Rxjs", "Ngrx", "Tailwind", "Redux"],
     imageUrl: trelloClone,
+    link: 'https://trello-clone-frontend-kohl.vercel.app'
   },
   {
     title: "La Bonnz",
@@ -83,6 +85,7 @@ export const projectsData = [
       "Discover 'La Bonnz,' your gateway to a world of exquisite products. Shop, save, and experience the finest in every purchase.",
     tags: ["Nodejs", "HBS", "MongoDB", "HTML", "CSS"],
     imageUrl: labonzz,
+    link:'https://rafcart-cpeitwtrka-uc.a.run.app/shop-list'
   },
 ] as const;
 
