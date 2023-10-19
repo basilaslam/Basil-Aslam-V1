@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import genius from "@/public/Genius.png";
-import labonzz from "@/public/La-Bonzz.png";
+import greeny from "@/public/greeny.png";
 import trelloClone from "@/public/Trello-Clone.png";
 
 export const links = [
@@ -80,12 +80,12 @@ export const projectsData = [
     link: 'https://trello-clone-frontend-kohl.vercel.app'
   },
   {
-    title: "La Bonnz",
+    title: "Greeny",
     description:
-      "Discover 'La Bonnz,' your gateway to a world of exquisite products. Shop, save, and experience the finest in every purchase.",
-    tags: ["Nodejs", "HBS", "MongoDB", "HTML", "CSS"],
-    imageUrl: labonzz,
-    link:'https://rafcart-cpeitwtrka-uc.a.run.app/shop-list'
+      "Your personalized grocery app for quick, convenient shopping, with fresh selections and flexible delivery. Shop smarter with FreshCart",
+    tags: ["Nodejs", "EJS", "MongoDB", "HTML", "CSS"],
+    imageUrl: greeny,
+    link:'https://greeny-cpeitwtrka-an.a.run.app'
   },
 ] as const;
 
@@ -96,12 +96,16 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
+  "Angular",
+  "NgRx",
+  "RxJs",
   "Node.js",
   "Git",
   "Tailwind",
   "Prisma",
   "MongoDB",
   "Redux",
+  "Zustand",
   "Express",
   "PostgreSQL",
   "Framer Motion",
