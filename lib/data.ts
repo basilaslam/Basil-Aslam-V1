@@ -36,14 +36,6 @@ export const links = [
 export const experiencesData = [
   
   {
-    title: "Graduated higher secondary",
-    location: "Kozhikode, Kerala",
-    description:
-      "I have completed my higher secondary education from Univercity of Calicut",
-    icon: React.createElement(LuGraduationCap),
-    date: "2018 - 2019",
-  },
-  {
     title: "Graduated bootcamp",
     location: "Kozhikode, Kerala",
     description:
@@ -52,10 +44,10 @@ export const experiencesData = [
     date: "2023",
   },
   {
-    title: "Bachelor of Computer Applications",
-    location: "Bharthia, Uttar Pradesh",
+    title: "Nexkhad  Technologys",
+    location: "Kozhikode, Kerala",
     description:
-      "I'm currently pursuing a Bachelor of Computer Applications from GLA Univercity as a distance degree",
+      "I'm currently working at Nexkhad Technologies as a junior software developer, where I develop internal tools to automate and streamline business processes, improving efficiency by 43%.",
     icon: React.createElement(LuGraduationCap),
     date: "2023 - present",
   },
