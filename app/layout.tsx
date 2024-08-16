@@ -6,12 +6,30 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
-
+import BasilAslam from "@/public/Basil-Aslam.jpeg";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Basil Aslam | Personal Portfolio",
-  description: "Basil is a full-stack developer",
+  title: "Basil Aslam | Full-Stack Developer Portfolio",
+  description: "Experienced full-stack developer specializing in React, Next.js, Node.js, and MongoDB. View my projects, skills, and experience in web development.",
+  keywords: "Basil Aslam, Full-Stack Developer, React Developer, Next.js Developer, Web Developer Portfolio, JavaScript Developer, Node.js Developer, TypeScript Developer, Web Development, Coding Bootcamp Graduate, Software Developer, Portfolio Projects, Contact Basil Aslam, MongoDB, web development, portfolio",
+  author: "Basil Aslam",
+  openGraph: {
+    title: "Basil Aslam | Full-Stack Developer Portfolio",
+    description: "Full-stack developer with expertise in React, Next.js, Node.js, and MongoDB. Explore my projects and skills.",
+    type: "website",
+    url: "https://www.basilaslam.com", 
+    image: BasilAslam,
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@basil_aslam_",
+    title: "Basil Aslam | Full-Stack Developer Portfolio",
+    description: "Full-stack developer specializing in React, Next.js, Node.js, and MongoDB. Check out my latest projects and skills.",
+    image: BasilAslam,
+  },
+  robots: "index, follow",
+  canonical: "https://www.basilaslam.com", // Replace with your actual URL
 };
 
 export default function RootLayout({
