@@ -15,12 +15,6 @@ export const metadata = {
   keywords: "Basil Aslam, Full-Stack Developer, React Developer, Next.js Developer, Web Developer Portfolio, JavaScript Developer, Node.js Developer, TypeScript Developer, Web Development, Coding Bootcamp Graduate, Software Developer, Portfolio Projects, Contact Basil Aslam, MongoDB, web development, portfolio",
   author: "Basil Aslam",
   metadataBase: new URL('https://www.basilaslam.com'),
-  alternates: {
-    canonical: '/',
-    languages: {
-      'en-US': '/en-US',
-    },
-  },
   openGraph: {
     title: "Basil Aslam | Full-Stack Developer Portfolio",
     description: "Full-stack developer with expertise in React, Next.js, Node.js, and MongoDB. Explore my projects and skills.",
@@ -36,7 +30,7 @@ export const metadata = {
     image: 'https://basilaslam.com/_next/image?url=/_next/static/media/Basil-Aslam.fb92ec26.jpeg&w=384&q=95',
   },
   robots: "index, follow",
-  canonical: "https://www.basilaslam.com",
+  canonical: "https://www.basilaslam.com"
 };
 
 export default function RootLayout({
