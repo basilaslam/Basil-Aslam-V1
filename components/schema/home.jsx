@@ -28,7 +28,7 @@ const schemaData = {
 
 const HomeSchema = () => {
     return(
-        <Script type="application/ld+json">{JSON.stringify(schemaData)}</Script>
+        <Script id="homeSchema" type="application/ld+json">{JSON.stringify(schemaData)}</Script>
     )
 }
 
