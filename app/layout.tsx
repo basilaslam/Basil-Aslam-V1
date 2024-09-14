@@ -10,7 +10,7 @@ import HomeSchema from "@/components/schema/home"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Basil Aslam | Full-Stack Developer Portfolio",
+  title: "Basil Aslam | Full-Stack Developer",
   description: "Experienced full-stack developer specializing in React, Next.js, Node.js, and MongoDB. View my projects, skills, and experience in web development.",
   keywords: "Basil Aslam, Full-Stack Developer, React Developer, Next.js Developer, Web Developer Portfolio, JavaScript Developer, Node.js Developer, TypeScript Developer, Web Development, Coding Bootcamp Graduate, Software Developer, Portfolio Projects, Contact Basil Aslam, MongoDB, web development, portfolio",
   author: "Basil Aslam",
