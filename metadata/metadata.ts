@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Basil Aslam | Full-Stack Developer Portfolio",
+    title: "Basil Aslam | Full-Stack Developer",
     description: "Welcome to the portfolio of Basil Aslam, a passionate full-stack developer specializing in React (Next.js), Node.js, and TypeScript. Explore my projects, skills, and professional experiences in web development, from building scalable applications to automating business processes. Learn more about my journey from a coding bootcamp graduate to a full-stack developer at WebCastle Media. Contact me for collaboration or opportunities.",
     image: '/path-to/Basil-Aslam.jpeg',
     keywords: [
