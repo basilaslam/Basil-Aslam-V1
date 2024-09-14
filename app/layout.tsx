@@ -20,14 +20,14 @@ export const metadata = {
     description: "Full-stack developer with expertise in React, Next.js, Node.js, and MongoDB. Explore my projects and skills.",
     type: "website",
     url: "https://basilaslam.com", 
-    image: 'https://basilaslam.com/_next/image?url=/_next/static/media/Basil-Aslam.fb92ec26.jpeg&w=384&q=95',
+    image: 'https://raw.githubusercontent.com/basilaslam/Basil-Aslam-V1/main/public/Basil-Aslam.jpeg',
   },
   twitter: {
     card: "summary_large_image",
     site: "@basil_aslam_",
     title: "Basil Aslam | Full-Stack Developer Portfolio",
     description: "Full-stack developer specializing in React, Next.js, Node.js, and MongoDB. Check out my latest projects and skills.",
-    image: 'https://basilaslam.com/_next/image?url=/_next/static/media/Basil-Aslam.fb92ec26.jpeg&w=384&q=95',
+    image: 'https://raw.githubusercontent.com/basilaslam/Basil-Aslam-V1/main/public/Basil-Aslam.jpeg',
   },
   robots: "index, follow",
   canonical: "https://basilaslam.com"
@@ -57,7 +57,6 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
-
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
