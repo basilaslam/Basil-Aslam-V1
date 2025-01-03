@@ -1,3 +1,4 @@
+// app/layout.tsx
 import Header from "@/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -6,31 +7,83 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
-import HomeSchema from "@/components/schema/home"
-const inter = Inter({ subsets: ["latin"] });
+import { jsonLdScriptProps } from "react-schemaorg";
+import { Person, WithContext } from "schema-dts";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Basil Aslam | Full-Stack Developer Portfolio",
-  description: "Experienced full-stack developer specializing in React, Next.js, Node.js, and MongoDB. View my projects, skills, and experience in web development.",
-  keywords: "Basil Aslam, Full-Stack Developer, React Developer, Next.js Developer, Web Developer Portfolio, JavaScript Developer, Node.js Developer, TypeScript Developer, Web Development, Coding Bootcamp Graduate, Software Developer, Portfolio Projects, Contact Basil Aslam, MongoDB, web development, portfolio",
-  author: "Basil Aslam",
-  metadataBase: new URL('https://basilaslam.com'),
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://basilaslam.com"),
+  title: {
+    default: "Basil Aslam | Full-Stack Developer Portfolio",
+    template: "%s | Basil Aslam",
+  },
+  description:
+    "Experienced full-stack developer specializing in React, Next.js, Node.js, and MongoDB. View my projects, skills, and experience in web development.",
+  keywords: [
+    "Basil Aslam",
+    "Full-Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Web Developer Portfolio",
+    "JavaScript Developer",
+    "Node.js Developer",
+    "TypeScript Developer",
+  ],
+  authors: [{ name: "Basil Aslam" }],
+  creator: "Basil Aslam",
+  publisher: "Basil Aslam",
+  alternates: {
+    canonical: "https://basilaslam.com",
+  },
   openGraph: {
-    title: "Basil Aslam | Full-Stack Developer Portfolio",
-    description: "Full-stack developer with expertise in React, Next.js, Node.js, and MongoDB. Explore my projects and skills.",
     type: "website",
-    url: "https://basilaslam.com", 
-    image: 'https://raw.githubusercontent.com/basilaslam/Basil-Aslam-V1/main/public/Basil-Aslam.jpeg',
+    locale: "en_US",
+    url: "https://basilaslam.com",
+    siteName: "Basil Aslam Portfolio",
+    title: "Basil Aslam | Full-Stack Developer Portfolio",
+    description:
+      "Full-stack developer with expertise in React, Next.js, Node.js, and MongoDB. Explore my projects and skills.",
+    images: [
+      {
+        url: "https://raw.githubusercontent.com/basilaslam/Basil-Aslam-V1/main/public/Basil-Aslam.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Basil Aslam - Full Stack Developer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@basil_aslam_",
+    creator: "@basil_aslam_",
     title: "Basil Aslam | Full-Stack Developer Portfolio",
-    description: "Full-stack developer specializing in React, Next.js, Node.js, and MongoDB. Check out my latest projects and skills.",
-    image: 'https://raw.githubusercontent.com/basilaslam/Basil-Aslam-V1/main/public/Basil-Aslam.jpeg',
+    description:
+      "Full-stack developer specializing in React, Next.js, Node.js, and MongoDB. Check out my latest projects and skills.",
+    images: {
+      url: "https://raw.githubusercontent.com/basilaslam/Basil-Aslam-V1/main/public/Basil-Aslam.jpeg",
+      alt: "Basil Aslam - Full Stack Developer",
+    },
   },
-  robots: "index, follow",
-  canonical: "https://basilaslam.com"
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "your-google-verification-code",
+    yandex: "your-yandex-verification-code",
+  },
 };
 
 export default function RootLayout({
@@ -38,14 +91,42 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Basil Aslam",
+    url: "https://basilaslam.com",
+    image:
+      "https://raw.githubusercontent.com/basilaslam/Basil-Aslam-V1/main/public/Basil-Aslam.jpeg",
+    jobTitle: "Full Stack Developer",
+    worksFor: {
+      "@type": "Organization",
+      name: "WebCastle Media",
+    },
+    description:
+      "Full-stack developer specializing in React, Next.js, Node.js, and MongoDB",
+    sameAs: [
+      "https://twitter.com/basil_aslam_",
+      "https://github.com/basilaslam",
+      "https://linkedin.com/in/basilaslam",
+    ],
+  };
 
   return (
     <html lang="en" className="!scroll-smooth">
-      
-      <link rel="canonical" href="https://basilaslam.com" />
-      <HomeSchema />
-
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://basilaslam.com" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <script
+          {...jsonLdScriptProps<Person>(
+            structuredData as unknown as WithContext<Person>
+          )}
+          type="application/ld+json"
+        />
+      </head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
@@ -55,7 +136,7 @@ export default function RootLayout({
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Header />
-            {children}
+            <main>{children}</main>
             <Footer />
             <Toaster position="top-right" />
             <ThemeSwitch />
