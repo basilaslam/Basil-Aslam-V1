@@ -8,15 +8,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: "https://basilaslam.com/projects",
+      url: "https://basilaslam.com/#projects",
       lastModified: new Date(),
     },
     {
-      url: "https://basilaslam.com/about",
+      url: "https://basilaslam.com/#about",
       lastModified: new Date(),
     },
     {
-      url: "https://basilaslam.com/contact",
+      url: "https://basilaslam.com/#contact",
       lastModified: new Date(),
     },
   ];
