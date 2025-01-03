@@ -4,6 +4,7 @@ import storedada from "@/public/storedada.png";
 import sidcoFoodsImage from "@/public/sidco.png";
 import theFreshMarketDubaiImage from "@/public/fmrk.png";
 import mattressLandImage from "@/public/mland.png";
+import VperfumesImage from "@/public/vperfumes.png";
 
 export const links = [
   {
@@ -76,6 +77,14 @@ export const projectsData = [
     link: "https://storedada.com",
   },
   {
+    title: "V Perfumes",
+    description:
+      "A perfumery brand with a blend of modernity & tradition. The V Perfumes commenced trading in 2010. With an experience of more than a decade in the wholesale & retail industry, it is now one of the largest retail perfume chains in the UAE offering the best perfumes in Dubai, UAE, Oman, KSA and Qatar.",
+    tags: ["Next.js", "Tailwind", "E-commerce", "Node.js", "JavaScript"],
+    imageUrl: VperfumesImage,
+    link: "https://vperfumes.com",
+  },
+  {
     title: "The Fresh Market Dubai",
     description:
       "An e-commerce website offering fresh groceries and produce with fast delivery across Dubai.",
@@ -102,14 +111,7 @@ export const projectsData = [
     title: "Mattress Land",
     description:
       "E-commerce platform for browsing and purchasing mattresses, bedding, and furniture.",
-    tags: [
-      "Angular",
-      "TypeScript",
-      "Ngrx",
-      "Tailwind",
-      "E-commerce",
-      "UI/UX Design",
-    ],
+    tags: ["Angular", "TypeScript", "Ngrx", "Tailwind", "E-commerce"],
     imageUrl: mattressLandImage,
     link: "https://mattressland.ae",
   },
